@@ -1,0 +1,14 @@
+<TMPL_foreach docs as doc>
+<table cellspacing="0" cellpadding="0" class="media_news<TMPL_if (pos == 0)>_first</TMPL_if>"><tbody><tr><td class="media_grey">
+<div class="media_block">
+ <div class="media_relative">
+  <a href="<TMPL_var request.relhome>/<TMPL_var doc.url>"><img src="<TMPL_var HTMLESCAPE(doc.image.url)>.140x88x1.jpg" width="140" height="88" alt="<TMPL_var HTMLESCAPE(doc.image_attr_alt)>" title="<TMPL_var HTMLESCAPE(doc.image_attr_title)>" /></a>
+  <div class="media_icon"><a href="<TMPL_var request.relhome>/<TMPL_var doc.url>"><img alt="" src="/img/video_140.png"></a></div>
+ </div>
+ <div class="media_text">
+ <a href="<TMPL_var request.relhome>/<TMPL_var doc.url>"><TMPL_var doc.title></a>
+ </div>
+</div>
+</td></tr></tbody></table>
+</TMPL_foreach>
+
